@@ -1,0 +1,17 @@
+.red-color {
+  color: red;
+  size: 20px
+}
+
+.blue-color {
+  color: blue;
+}
+
+#main-slogan{
+  font-weight: 900;
+}
+
+span{
+  margin: 15px;
+}
+
