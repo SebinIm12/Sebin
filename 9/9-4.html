@@ -6,16 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
+    /* 자손 개념 */
     div>h1{
       background-color: blue;
     }
+    /* 후손 개념 */
     div h1{
       background-color: green;
     }
-
+    /* div 바로 아래 후손 span에 모두 적용 */
     div span{
       background-color: yellow;
     }
+    /* div 바로 아래 자손 span에게만 적용 */
     div>span{
       border: 4px solid grey;
     }
@@ -27,11 +30,11 @@
    <h1>제목1</h1>
    <h2>제목2</h2>
     <div>
-       <ul>
-         <li>menu1</li>
-         <li>menu2</li>
-         <li><span>menu3</span></li>
-       </ul>
+      <ul>
+       <li>menu1</li>
+       <li>menu2</li>
+       <li><span>menu3</span></li>
+      </ul>
     </div>
     <h2>제목2</h2>
     <span>span</span>
