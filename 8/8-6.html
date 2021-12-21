@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keat</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    .scrollbox{
+      width: 200px;
+      height: 200px;
+      border: 2px solid black;
+      float: left;
+      box-sizing: border-box;
+      margin: 10px;
+    }
+    /* 가로 세로 스크롤바 모두 표시 */
+    .box1{
+      overflow: scroll;
+    }
+    /* 가로 스크롤바만 표시 */
+    .box2{
+      margin-left: 30px;
+      overflow-x: scroll;
+      overflow-y: hidden;
+    }
+    /* 세로 스크롤바만 표시 */
+    .box3{
+      margin-left: 30px;
+      overflow-x: hidden;
+      overflow-y: scroll
+    }
+  </style>
+</head>
+<body>
+  
+  <!-- 스크롤바를 가로, 세로 모두 표시 -->
+  <div class="scrollbox box1">
+    <h4>SCROLL-X,Y</h4>
+    <figure>
+      <img src="/img/jazz.jpeg" alt="jazz">
+    </figure>
+  </div>
+
+  <!-- 스크롤바를 가로만 표시 -->
+  <div class="scrollbox box2">
+  <h4>SCROLL-X</h4>
+  <figure>
+    <img src="/img/jazz.jpeg" alt="jazz">
+  </figure>
+</div>
+
+<!-- 스크롤바를 세로만 표시 -->
+<div class="scrollbox box3">
+<h4>SCROLL-Y</h4>
+<figure>
+  <img src="/img/jazz.jpeg" alt="jazz">
+</figure>
+</div>
+
+</body>
+</html>
